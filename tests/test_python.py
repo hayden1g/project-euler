@@ -30,7 +30,7 @@ def test_solution(path: Path) -> None:
     if number not in ANSWERS:
         pytest.skip(f"no answer recorded for problem {number}")
 
-        spec = importlib.util.spec_from_file_location(path.stem, path)
+    spec = importlib.util.spec_from_file_location(path.stem, path)
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
