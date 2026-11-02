@@ -10,8 +10,8 @@ def solve() -> int:
             counter = 0
             while primes is True:
                 current = n*n + a*n + b
-                for i in range(2,math.isqrt(abs(current)+1)):
-                    if current % i == 0:
+                for i in range(2,math.isqrt(abs(current))+1):
+                    if current % i == 0 or current < 2:
                         primes = False
                         break
                 if primes is True:

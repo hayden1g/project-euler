@@ -10,7 +10,7 @@ def solve() -> int:
         foundend = False
         while foundend is False:
             remainder = remainder*10 % i
-            if remainder in remainders and digits > 3:
+            if remainder in remainders:
                 foundend = True
             else:
                 remainders.add(remainder)

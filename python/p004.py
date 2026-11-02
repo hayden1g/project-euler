@@ -1,5 +1,4 @@
 def solve() -> int:
-    a, b = 100, 100
     largest = 0
     for a in range(100, 1000):
         for b in range(100, 1000):
