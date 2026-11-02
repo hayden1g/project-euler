@@ -1,8 +1,8 @@
 # Project Euler
 
-Solutions to [Project Euler](https://projecteuler.net/) problems 1–100 in Python. I might add more languages in the future.
+Solutions to [Project Euler](https://projecteuler.net/) problems 1–100 in Python, might add more languages in the future.
 
-**Progress:** 5 / 100
+**Progress:** 9 / 100
 
 ## Running
 
