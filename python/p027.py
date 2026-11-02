@@ -10,10 +10,13 @@ def solve() -> int:
             counter = 0
             while primes is True:
                 current = n*n + a*n + b
-                for i in range(2,math.isqrt(abs(current))+1):
-                    if current % i == 0 or current < 2:
-                        primes = False
-                        break
+                if current < 2:
+                    primes = False
+                else:
+                    for i in range(2, math.isqrt(current)+1):
+                        if current % i == 0:
+                            primes = False
+                            break
                 if primes is True:
                     counter += 1
                 n += 1
