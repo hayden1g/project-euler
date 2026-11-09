@@ -2,7 +2,7 @@
 
 Solutions to [Project Euler](https://projecteuler.net/) problems 1–100 in Python, might add more languages in the future.
 
-**Progress:** 18 / 100
+**Progress:** 21 / 100
 
 ## Running
 
