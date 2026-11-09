@@ -19,12 +19,7 @@ def solve() -> int:
     while rownum >= 0:
         row = pyramid[rownum]
         for i in range(len(row)-1):
-            num1 = row[i]
-            num2 = row[i+1]
-            if num1 > num2:
-                pyramid[rownum-1][i] += num1
-            if num1 < num2:
-                pyramid[rownum-1][i] += num2
+            pyramid[rownum-1][i] += max(row[i], row[i+1])
         rownum -= 1
     return pyramid[0][0]
             

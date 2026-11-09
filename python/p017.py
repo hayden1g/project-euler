@@ -27,8 +27,6 @@ def solve() -> int:
     letterCount = 0
     for word in words:
         letterCount += len(word)
-    print(words)
-    print(len(words))
     return letterCount
             
 
