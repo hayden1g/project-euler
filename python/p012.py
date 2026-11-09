@@ -1,21 +1,19 @@
 import math
 
 def solve(limit: int = 500) -> int:
-    found = False
     triangleNum = 0
     count = 1
-    while not found:
+    while True:
         triangleNum += count
         divisorCount = 0
         for i in range(1, math.isqrt(triangleNum) + 1):
             if triangleNum % i == 0:
                 divisorCount += 2
-        if math.isqrt(i)**2 == i:
+        if math.isqrt(triangleNum)**2 == triangleNum:
             divisorCount -= 1
-        if divisorCount > 500:
-            found = True
+        if divisorCount > limit:
+            return triangleNum
         count += 1
-    return triangleNum
 
 if __name__ == "__main__":
     print(solve())

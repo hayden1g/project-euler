@@ -1,5 +1,3 @@
-import math
-
 def solve(limit: int = 1000000) -> int:
     maxLength = 0
     lengthdict = {}
