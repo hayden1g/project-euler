@@ -10,6 +10,8 @@ def solve(limit: int = 500) -> int:
         for i in range(1, math.isqrt(triangleNum) + 1):
             if triangleNum % i == 0:
                 divisorCount += 2
+        if math.isqrt(i)**2 == i:
+            divisorCount -= 1
         if divisorCount > 500:
             found = True
         count += 1

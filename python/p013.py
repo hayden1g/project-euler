@@ -1,4 +1,3 @@
-import numpy
 nums = """37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
 74324986199524741059474233309513058123726617309629
@@ -102,11 +101,10 @@ nums = """37107287533902102798797998220837590246510135740250
 
 def solve() -> int:
     numlist = nums.split("\n")
-    sum = 0
-    print(numlist)
+    sumn = 0
     for num in numlist:
-        sum += int(num)
-    return int(str(sum)[:10])
+        sumn += int(num)
+    return int(str(sumn)[:10])
 
 if __name__ == "__main__":
     print(solve())  
