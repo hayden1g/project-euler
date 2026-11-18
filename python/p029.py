@@ -1,5 +1,3 @@
-import math
-
 def solve() -> int:
     nums = []
     for a in range(2,101):

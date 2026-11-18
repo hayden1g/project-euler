@@ -1,5 +1,3 @@
-import math
-
 def solve() -> int:
     # Since 9^5+9^5+9^5+9^5+9^5+9^5 = 354294, no number above that will
     # ever have a sum big enough.
