@@ -9,7 +9,6 @@ def solve() -> int:
     names.sort()
     total = 0
     position = 1
-    print(names)
     for name in names:
         for ch in name:
             total += ((ord(ch) - 64) * position)
