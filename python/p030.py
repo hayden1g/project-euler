@@ -2,14 +2,14 @@ def solve() -> int:
     # Since 9^5+9^5+9^5+9^5+9^5+9^5 = 354294, no number above that will
     # ever have a sum big enough. 7 digit numbers will always have a sum
     # of 6 digits.
-    all = 0
+    sumall = 0
     for a in range(2,354294):
-        sum = 0
+        sumdigits = 0
         for digit in str(a):
-            sum += int(digit)**5
+            sumdigits += int(digit)**5
         if sum == a:
-            all += sum
-    return all
+            sumall += sumdigits
+    return sumall
 
 
 if __name__ == "__main__":
