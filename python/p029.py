@@ -3,8 +3,7 @@ def solve() -> int:
     for a in range(2,101):
         for b in range(2, 101):
             nums.append(a**b)
-
-    return len(set(sorted(nums)))
+    return len(set(nums))
 
 
 if __name__ == "__main__":
