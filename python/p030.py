@@ -7,7 +7,7 @@ def solve() -> int:
         sumdigits = 0
         for digit in str(a):
             sumdigits += int(digit)**5
-        if sum == a:
+        if sumdigits == a:
             sumall += sumdigits
     return sumall
 
